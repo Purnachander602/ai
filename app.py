@@ -152,7 +152,7 @@ div[data-testid="stChatInput"] textarea::placeholder {
 # ----------------------------------
 # DATABASE
 # ----------------------------------
-client_db = MongoClient(st.secrets["MONGO_URI"])
+client_db = MongoClient("your_atlas_connection_string")
 db = client_db["ai_dev_assistant"]
 users_collection = db["users"]
 history_collection = db["history"]
